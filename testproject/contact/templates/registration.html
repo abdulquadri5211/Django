@@ -1,0 +1,49 @@
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <title>My Landing Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="sty.css"> -->
+  <!-- </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>  -->
+      <!-- <section id="hero">
+        <h1>Welcome to My Landing Page</h1>
+        <p>This is where I showcase my products and services.</p>
+        <a href="#" class="btn">Learn More</a>
+      </section> -->
+      <h1>Register !!!</h1>
+      <form method="POST" action="signup">
+        {%csrf_token%}
+        <label for="uname">Username :</label>
+       <input type="text" placeholder="enter username" name="username" required > 
+        <br>
+        <br>
+        <br>
+       <label for="psw">Password :</label>
+       <input type="password" placeholder="enter password" name="password1" required > 
+       <br>
+       <br>
+       <br>
+       <label for="psw">Confirm-password :</label>
+       <input type="password" placeholder="enter password" name="password2" required > 
+       <br>
+       <br>
+       <br>
+       <button type="submit">signup</button> 
+      </form>
+      <br>
+      <br>
+    </form>
+      Don't have an accout<a href="{% url 'loginPage' %}">Login</a>
+</body> 
+</html>
